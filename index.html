@@ -272,15 +272,61 @@
             >
           </td>
           <td>
-            <div style="display: inline-block">DD MM YYY</div>
+            <div style="display: inline-block">
+              DD &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MM &nbsp;&nbsp;&nbsp;&nbsp;
+              YYYY
+            </div>
             <div>
-              <form>
-                <select id="date" name=""></select>
-
-                <select id="date" name="MM"></select>
-                <!-- <select id="date" name="YYYY"></select> -->
-                <input style="width: 30px" type="text" name="" id="" />
-              </form>
+              <select id="date" name="">
+                <option value="">DD</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select>
+              <select id="date" name="MM">
+                <option value="">MM</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+              <input style="width: 60px" type="text" name="" id="" />
             </div>
           </td>
         </tr>
@@ -291,7 +337,7 @@
           </td>
 
           <td colspan="1">
-            <div><span>*</span><b>Gender</b></div>
+            <div><span>*</span><b>6.Gender</b></div>
           </td>
           <td>
             <form>
@@ -312,7 +358,7 @@
             <input type="checkbox" name="" id="" />
           </td>
           <td colspan="2">
-            <div><b>7.Photo Mismatch</b></div>
+            <div><b> 7.Photo Mismatch</b></div>
           </td>
         </tr>
 
@@ -321,7 +367,7 @@
             <input type="checkbox" name="" id="" />
           </td>
           <td colspan="2">
-            <div><b>8.Signature Mismatch</b></div>
+            <div><b> 8.Signature Mismatch</b></div>
           </td>
         </tr>
 
@@ -448,6 +494,16 @@
           </td>
         </tr>
 
+        <tr>
+          <td></td>
+          <td colspan="2">
+            <b
+              >10.If you desire to update your other address, give required
+              details &
+              <u style="color: black">Submit proof of other address also.</u></b
+            >
+          </td>
+        </tr>
         <tr>
           <td></td>
           <td>
@@ -577,14 +633,17 @@
 
         <tr>
           <td></td>
-          <td><b>PAN1</b></td>
-          <td><b>PAN2</b></td>
+          <td>
+            <b>PAN1</b>
+            <input for="text" name="" id="" />
+          </td>
+          <td><b>PAN2</b> <input for="text" name="" id="" /></td>
         </tr>
 
         <tr>
           <td></td>
-          <td><b>PAN3</b></td>
-          <td><b>PAN4</b></td>
+          <td><b>PAN3</b> <input for="text" name="" id="" /></td>
+          <td><b>PAN4</b> <input for="text" name="" id="" /></td>
         </tr>
 
         <tr>
@@ -660,14 +719,124 @@
             ><input type="radio" style="margin-right: 5px" /><label for=""
               >Physical PAN card & e-PAN Card</label
             >
+            <input
+              type="radio"
+              style="margin-left: 50px; margin-right: 5px"
+            /><label for="" style="margin-right: 50px">Only e-PAN Card</label>
+
+            <b><u style="color: black">Fees Applicable</u></b>
           </td>
         </tr>
 
         <tr>
-          
+          <td></td>
+          <td colspan="2"><b>Other Details</b></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td colspan="2"><b>1.Depository Account Details</b></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td colspan="2">
+            <b>DP ID:</b>
+            <input type="text" name="" id="" />
+            <b>Client ID:</b>
+            <input type="text" name="" id="" />
+          </td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td colspan="2"><b>2.Payment Details</b></td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="radio" name="" id="" />
+          </td>
+
+          <td colspan="2"><b>Online Payment</b></td>
         </tr>
       </tbody>
     </table>
+    <div>
+      For Paperless PAN Application:
+      <input type="radio" name="" id="Yes" />
+      <label for="Yes">Yes</label>
+      <input type="radio" name="" id="No" />
+      <label for="No">No</label>
+    </div>
+    <div>
+      <input type="radio" name="" id="DSC" />
+      <label for="DSC">DSC</label>
+      <select style="width: 200px; margin-right: 10px">
+        <option>--Select--</option>
+      </select>
+      <u style="color: brown">Guidelines for DSC user</u>
+    </div>
+
+    <div>
+      <div style="display: inline-block; margin-right: 550px">Upload Photo</div>
+
+      <div style="display: inline-block; margin-right: 100px">
+        <input type="file" name="" id="" />
+      </div>
+      <div style="display: inline-block">
+        Upload Signature
+        <input
+          type="file"
+          name=""
+          id=""
+          style="margin-left: 50px; margin-right: 20px"
+        />
+      </div>
+    </div>
+
+    <div>
+      <div style="display: inline-block; margin-right: 520px">
+        Upload Document
+      </div>
+      <div style="display: inline-block; margin-right: 475px; margin-top: 5px">
+        <input type="file" name="" id="" />
+      </div>
+      OR
+    </div>
+
+    <div style="margin-top: 30px">
+      ALREADY UPLOADED PHOTO:
+      <input
+        type="text"
+        name=""
+        id=""
+        style="width: 200px; margin-left: 420px"
+      />
+    </div>
+
+    <div style="margin-top: 10px">
+      ALREADY UPLOADED SIGNATURE:
+      <input type="text" name="" id="" style="margin-left: 385px" />
+    </div>
+
+    <div style="margin-top: 10px">
+      ALREADY UPLOADED DOCUMENTS:
+      <input
+        type="text"
+        name=""
+        id=""
+        style="margin-left: 375px; height: 200px; width: 400px"
+      />
+    </div>
+
+    <div>
+      <button style="margin-left: 50%; margin-right: 50%; margin-top: 10px">
+        Submit
+      </button>
+    </div>
+
+    <hr style="margin-top: 10px" />
+    <br />
   </body>
 </html>
-
